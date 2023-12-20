@@ -5,6 +5,7 @@ import Landing from '../screens/preAuth/Landing';
 import SignIn from '../screens/preAuth/SignIn';
 import SignUp from '../screens/preAuth/SignUp';
 import BottomTabNavigator from './BottomTabNavigator';
+import ForgotPassword from '../screens/preAuth/ForgotPass';
 
 function AppNavigator(){
   const Stack = createNativeStackNavigator();
@@ -29,6 +30,13 @@ function AppNavigator(){
           <Stack.Screen
             name="SignUp"
             component={SignUp}
+            options={{
+              headerShown: false,
+            }}
+          />
+          <Stack.Screen
+            name="ForgotPassword"
+            component={ForgotPassword}
             options={{
               headerShown: false,
             }}

@@ -153,7 +153,11 @@ const SignIn = props => {
           flexDirection: 'row',
           padding: 20,
         }}>
+          <TouchableOpacity onPress={() => {
+            props.navigation.navigate('ForgotPassword');
+          }}>
         <Text>Forgot Password?</Text>
+        </TouchableOpacity>
         <TouchableOpacity
           onPress={() => {
             props.navigation.navigate('SignUp');
